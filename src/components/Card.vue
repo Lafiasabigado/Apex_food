@@ -61,7 +61,7 @@ const customers = [
     <p class="py-4">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
   </div>
   <div class="flex-row lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-12 grid justify-center">
-    <div v-for="categorie in category" :key="categorie.id" class="flex-col justify-center mx-auto p-2 grid">
+    <div v-for="categorie in category" :key="categorie.id" class="flex-col justify-center mx-auto p-2 flex">
       <button @click="selectedCategory(categorie.name)" class="font-bold uppercase bg-orange-200 hover:bg-orange-400 rounded-3xl p-3">{{ categorie.name }}</button>
     </div>
   </div>

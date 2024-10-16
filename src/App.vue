@@ -1,13 +1,9 @@
 <script setup>
-import Card from './components/Card.vue';
-import About from './components/About.vue';
+import { RouterView } from 'vue-router';
+
+
 </script>
 
 <template>
-  <div>
-  <About></About>
-  <Card></Card>
-  </div>
+  <RouterView/>
 </template>
-
-
