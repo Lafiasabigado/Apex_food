@@ -2,21 +2,21 @@
 import { computed, ref } from 'vue';
 
 const events = [
-  { id:1 , name:"Caterings", image:"/src/assets/img/events1.png", description:"In the new era of technology we look in the future with certainty for life."},
-  { id:2 , name:"Birthdays",image:"/src/assets/img/events2.png", description:"In the new era of technology we look in the future with certainty for life."},
-  { id:3 , name:"Weddings", image:"/src/assets/img/events3.png", description:"In the new era of technology we look in the future with certainty for life."},
-  { id:4 , name:"Events",image:"/src/assets/img/events4.png", description:"In the new era of technology we look in the future with certainty for life."},
+  { id:1 , name:"Caterings", image:"./src/assets/img/events1.png", description:"In the new era of technology we look in the future with certainty for life."},
+  { id:2 , name:"Birthdays",image:"./src/assets/img/events2.png", description:"In the new era of technology we look in the future with certainty for life."},
+  { id:3 , name:"Weddings", image:"./src/assets/img/events3.png", description:"In the new era of technology we look in the future with certainty for life."},
+  { id:4 , name:"Events",image:"./src/assets/img/events4.png", description:"In the new era of technology we look in the future with certainty for life."},
 ]
 
 const items = [
-  { id: 1, image: '/src/assets/img/menu-6.jpg', price: '$ 9.99', name: 'Fried Eggs', description: 'Made with eggs, lettuce, salt, oil and other ingredients.', categorie:"Breakfast" },
-  { id: 2, image: '/src/assets/img/menu-7.jpg', price: '$ 10.99', name: 'Scrambled Eggs', description: 'Made with eggs, milk, salt, and pepper.', categorie:"Drinks" },
-  { id: 3, image: '/src/assets/img/menu-8.jpg', price: '$ 11.99', name: 'Omelette', description: 'Made with eggs, cheese, and vegetables.', categorie:"Desserts" },
-  { id: 4, image: '/src/assets/img/menu-1.jpg', price: '$ 12.99', name: 'Boiled Eggs', description: 'Made with eggs and water.', categorie:"Desserts" },
-  { id: 5, image: '/src/assets/img/menu-2.jpg', price: '$ 13.99', name: 'Poached Eggs', description: 'Made with eggs and vinegar.', categorie:"Desserts" },
-  { id: 6, image: '/src/assets/img/menu-3.jpg', price: '$ 14.99', name: 'Egg Sandwich', description: 'Made with eggs, bread, and mayo.', categorie:"Desserts" },
-  { id: 7, image: '/src/assets/img/menu-4.jpg', price: '$ 15.99', name: 'Egg Salad', description: 'Made with eggs, mayo, and spices.', categorie:"Main Dishes" },
-  { id: 8, image: '/src/assets/img/menu-5.jpg', price: '$ 16.99', name: 'Egg Benedict', description: 'Made with eggs, English muffin, and hollandaise sauce.', categorie:"Dishes" }
+  { id: 1, image: './src/assets/img/menu-6.jpg', price: '$ 9.99', name: 'Fried Eggs', description: 'Made with eggs, lettuce, salt, oil and other ingredients.', categorie:"Breakfast" },
+  { id: 2, image: './src/assets/img/menu-7.jpg', price: '$ 10.99', name: 'Scrambled Eggs', description: 'Made with eggs, milk, salt, and pepper.', categorie:"Drinks" },
+  { id: 3, image: './src/assets/img/menu-8.jpg', price: '$ 11.99', name: 'Omelette', description: 'Made with eggs, cheese, and vegetables.', categorie:"Desserts" },
+  { id: 4, image: './src/assets/img/menu-1.jpg', price: '$ 12.99', name: 'Boiled Eggs', description: 'Made with eggs and water.', categorie:"Desserts" },
+  { id: 5, image: './src/assets/img/menu-2.jpg', price: '$ 13.99', name: 'Poached Eggs', description: 'Made with eggs and vinegar.', categorie:"Desserts" },
+  { id: 6, image: './src/assets/img/menu-3.jpg', price: '$ 14.99', name: 'Egg Sandwich', description: 'Made with eggs, bread, and mayo.', categorie:"Desserts" },
+  { id: 7, image: './src/assets/img/menu-4.jpg', price: '$ 15.99', name: 'Egg Salad', description: 'Made with eggs, mayo, and spices.', categorie:"Main Dishes" },
+  { id: 8, image: './src/assets/img/menu-5.jpg', price: '$ 16.99', name: 'Egg Benedict', description: 'Made with eggs, English muffin, and hollandaise sauce.', categorie:"Dishes" }
 ];
 
 const category = [
@@ -45,10 +45,10 @@ function selectedCategory(categorie){
 
 
 const customers = [
-  {id:1, speech:"“The best restaurant”", description:"Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.", image:"/src/assets/img/testimonial-1.jpg",name:"Sophire Robson",address:"Los Angeles, CA"},
-  {id:2, speech:"“Simply delicious”", description:"Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.", image:"/src/assets/img/testimonial-2.jpg",name:"Matt Cannon",address:"San Diego, CA"},
-  {id:3, speech:"“One of a kind restaurant”", description:"The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.", image:"/src/assets/img/testimonial-4.jpg",name:"Andy Smith",address:"San Francisco, CA"},
-  {id:4, speech:"“The best restaurant”", description:"Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.", image:"/src/assets/img/abdiasdev.jpg",name:"Abdias Dev",address:"California , CA"},
+  {id:1, speech:"“The best restaurant”", description:"Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.", image:"./src/assets/img/testimonial-1.jpg",name:"Sophire Robson",address:"Los Angeles, CA"},
+  {id:2, speech:"“Simply delicious”", description:"Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.", image:"./src/assets/img/testimonial-2.jpg",name:"Matt Cannon",address:"San Diego, CA"},
+  {id:3, speech:"“One of a kind restaurant”", description:"The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.", image:"./src/assets/img/testimonial-4.jpg",name:"Andy Smith",address:"San Francisco, CA"},
+  {id:4, speech:"“The best restaurant”", description:"Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.", image:"./src/assets/img/abdiasdev.jpg",name:"Abdias Dev",address:"California , CA"},
 ]
 </script>
 
