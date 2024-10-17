@@ -1,13 +1,13 @@
 <script setup>
    import { ref, onMounted } from 'vue'
+   import { useDark,useToggle } from '@vueuse/core';
 
-   const isDarkMode = ref(false)
+   
    const navContent = ref(null)
 
-  const toggleDarkMode = () => {
-    isDarkMode.value = !isDarkMode.value
-    document.documentElement.classList.toggle('dark')
-   }
+   const isDarkMode = useDark()
+
+  const toggleDarkMode = useToggle(isDarkMode)
 
    const toggleNav = () => {
     if (navContent.value) {
@@ -42,7 +42,7 @@
                     <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
                   </router-link>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
-                    <i id="mode" @click="toggleDarkMode" class="fas fa-moon text-gray-500"></i> 
+                    <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500"></i> 
                   </a>
               </div>
 
@@ -96,3 +96,9 @@
     </div>
   </main>
 </template>
+
+<style>
+  html.dark {
+    color-scheme: dark;
+  }
+</style>
