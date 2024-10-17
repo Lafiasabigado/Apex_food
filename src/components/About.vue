@@ -11,11 +11,11 @@ const chefs = [
 
 <template>
     <h2 class="text-center text-3xl uppercase font-bold  p-4">About Us</h2>
-    <div class="container max-w-4xl space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 gap-3 m-2">
+    <div class="container max-w-4xl lg:space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 gap-3 m-2">
         <div class="flex-col flex m-3">
            <img src="/src/assets/img/Image.png" class="w-15 transition-transform duration-50 hover:scale-90 md:mx-auto" alt="">
         </div>
-        <div class="flex-col flex">
+        <div class="flex-col flex m-4">
             <h2 class="my-1 font-semi-bold text-3xl">We provide healthy food for your family.</h2>
             <p class="my-1">Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.</p>
             <p class="my-1">At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
