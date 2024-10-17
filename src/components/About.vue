@@ -11,7 +11,7 @@ const chefs = [
 
 <template>
     <h2 class="text-center text-3xl uppercase font-bold  p-4">About Us</h2>
-    <div class="container max-w-4xl lg:space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 gap-3 m-2">
+    <div class="container max-w-4xl lg:space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 m-2">
         <div class="flex-col flex m-3">
            <img src="/src/assets/img/Image.png" class="w-15 transition-transform duration-50 hover:scale-90 md:mx-auto" alt="">
         </div>
