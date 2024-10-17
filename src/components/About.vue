@@ -1,10 +1,10 @@
 <script setup>
 
 const chefs = [
-    {id:1, name:"Abdias Curtis" , designation:"Founder", image:"./src/assets/img/team-1.jpg"},
-    {id:2, name:"Rodrigue Elijah" , designation:"Co-Founder", image:"./src/assets/img/team-2.jpg"},
-    {id:3, name:"Nel Smith" , designation:"Co-Founder", image:"./src/assets/img/team-3.jpg"},
-    {id:4, name:"Georges Lebron" , designation:"Co-Founder", image:"./src/assets/img/team-4.jpg"},
+    {id:1, name:"Abdias Curtis" , designation:"Founder", image:"/images/team-1.jpg"},
+    {id:2, name:"Rodrigue Elijah" , designation:"Co-Founder", image:"/images/team-2.jpg"},
+    {id:3, name:"Nel Smith" , designation:"Co-Founder", image:"/images/team-3.jpg"},
+    {id:4, name:"Georges Lebron" , designation:"Co-Founder", image:"/images/team-4.jpg"},
 ]
 
 </script>
