@@ -54,7 +54,7 @@
                       </svg>
                   </button>
                   <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
-                     <i id="mode" @click="toggleDarkMode" class="fas fa-moon text-gray-500 w-50"></i> 
+                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50"></i> 
                   </a>
               </div>
           </div>
