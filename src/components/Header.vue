@@ -47,12 +47,15 @@
               </div>
 
               <!-- Icon (Small screens) -->
-              <div class="md:hidden flex items-center">
+              <div class="md:hidden flex items-center justify-between space-x-8 py-4">
                   <button @click="toggleNav" id="nav-toggle" class="text-gray-600 focus:outline-none">
                       <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
                       </svg>
                   </button>
+                  <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
+                     <i id="mode" @click="toggleDarkMode" class="fas fa-moon text-gray-500 w-50"></i> 
+                  </a>
               </div>
           </div>
       </div>
@@ -72,11 +75,11 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
             </li>
-              <li class="py-2">
-                  <a href="/connexion.html" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Connexion</a>
-              </li>
+            <router-link to="/views/login">
+                <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
+            </router-link>   
           </ul>
-      </div>
+        </div>
   </nav>
   <main class="dark:bg-zinc-950 dark:text-zinc-100">
     <div class="bg-[url('/src/assets/img/bg.svg')] w-full bg-cover bg-center relative h-screen">
