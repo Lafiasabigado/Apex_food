@@ -24,7 +24,7 @@ const chefs = [
     </div>
     
     <!--- Master Chef Section -->
-    <h2 class="text-center text-3xl  pt-4">Our Master Chef</h2>
+    <h2 class="text-center text-3xl font-bold  pt-4">Our Master Chef</h2>
     <div  class="flex-row grid lg:grid-cols-4 md:grid-cols-2 mx-auto pt-4">
         <div v-for="chef in chefs" :key="chef.id" class="flex-col flex m-10 p-4 border shadow-lg rounded-lg group relative">
             <img :src="chef.image" alt="" class="rounded-full w-15">

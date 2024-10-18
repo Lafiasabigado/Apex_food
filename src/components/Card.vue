@@ -78,8 +78,8 @@ const customers = [
   <!-- Events Section -->
 
   <div class="p-4">
-    <h2 class="m-1 font-semi-bold text-center text-3xl">We also offer unique services for your events</h2>
-    <div class="flex-row grid md:grid-cols-2 lg:grid-cols-4">
+    <h2 class="m-1 pt-2 font-semi-bold text-center text-3xl">We also offer unique services for your events</h2>
+    <div class="pt-7 flex-row grid md:grid-cols-2 lg:grid-cols-4">
       <div v-for="event in events" :key="event.id" class="flex-col flex m-8">
         <img :src="event.image" alt="" class="w-15 hover:scale-90 duration-50 transition-transform rounded-2xl">
         <h2 class="m-1 font-bold">{{ event.name }}</h2>
@@ -90,7 +90,7 @@ const customers = [
 
   <!-- Customers Section -->
   <div class="p-8">
-    <h2 class="text-center text-3xl py-2">What Our Customers Say</h2>
+    <h2 class="text-center text-3xl pb-8">What Our Customers Say</h2>
     <div class="flex-row grid lg:grid-cols-4 md:grid-cols-2">
       <div v-for="customer in customers" :key="customer.id" class="flex-col flex m-2 p-4 shawdow-lg border dark:hover:bg-orange-400 hover:bg-orange-100 rounded-2xl">
         <h2 class="font-bold text-customRed m-2">{{ customer.speech }}</h2>
