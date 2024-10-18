@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <footer class="bg-zinc-950 w-full h-70 text-white pt-4">
-    <div class="flex-row grid md:grid-cols-4 m-4">
+    <footer class="bg-zinc-950 w-full h-70 text-white pb-8">
+    <div class="pt-7 flex-row grid md:grid-cols-4 m-4">
       <div class="flex-col flex m-2">
         <div class="text-3xl font-bold text-orange-500 m-2">
           <a href="#">Apex Food</a>

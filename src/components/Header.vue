@@ -7,7 +7,7 @@
 
    const isDarkMode = useDark()
 
-  const toggleDarkMode = useToggle(isDarkMode)
+   const toggleDarkMode = useToggle(isDarkMode)
 
    const toggleNav = () => {
     if (navContent.value) {
