@@ -60,17 +60,17 @@ const customers = [
     <h2 class="text-center text-3xl uppercase font-bold">Our Menu</h2>
     <p class="py-4">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
   </div>
-  <div class="flex-row lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-12 grid justify-center">
+  <div class="flex-row lg:flex-row lg:max-w-4xl mx-auto md:grid-cols-6 sm:grid-cols-12 grid justify-center">
     <div v-for="categorie in category" :key="categorie.id" class="flex-col justify-center mx-auto p-2 flex">
-      <button @click="selectedCategory(categorie.name)" class="font-bold uppercase bg-orange-200 hover:bg-orange-400 rounded-3xl p-3">{{ categorie.name }}</button>
+      <button @click="selectedCategory(categorie.name)" class="font-bold uppercase bg-orange-200 hover:bg-orange-400 dark:bg-orange-400 dark:hover:bg-orange-600 rounded-3xl p-3">{{ categorie.name }}</button>
     </div>
   </div>
   <div class="pt-7 flex-row grid lg:grid-cols-4 md:grid-cols-2 justify-center items-center">
-        <div v-for="item in filteredItems" :key="item.id"  class="border flex m-4 p-4 flex-col justify-center items-center shadow rounded-2xl hover:bg-orange-300 transition-transform duration-50 ease-in-out hover:scale-90">
+        <div v-for="item in filteredItems" :key="item.id"  class="border flex m-4 p-4 flex-col justify-center items-center shadow rounded-2xl hover:bg-orange-100 dark:hover:bg-orange-400 transition-transform duration-50 ease-in-out hover:scale-90">
            <img :src="item.image" class="rounded-lg bg-cover" alt="">
            <h2 class="text-customRed font-bold m-2">{{ item.price }}</h2>
            <h2 class="m-1 font-bold">{{ item.name }}</h2>
-           <p class="text-center m-1">{{ item.description }}</p>
+           <p class="text-center m-1 pb-4">{{ item.description }}</p>
            <button class="text-white font-bold uppercase bg-orange-400 hover:bg-orange-600 rounded-3xl p-2">Add to cart</button>
         </div>
   </div>
@@ -92,7 +92,7 @@ const customers = [
   <div class="p-8">
     <h2 class="text-center text-3xl py-2">What Our Customers Say</h2>
     <div class="flex-row grid lg:grid-cols-4 md:grid-cols-2">
-      <div v-for="customer in customers" :key="customer.id" class="flex-col flex m-2 p-4 shawdow-lg border dark:hover:bg-orange-300 hover:bg-orange-100 rounded-2xl">
+      <div v-for="customer in customers" :key="customer.id" class="flex-col flex m-2 p-4 shawdow-lg border dark:hover:bg-orange-400 hover:bg-orange-100 rounded-2xl">
         <h2 class="font-bold text-customRed m-2">{{ customer.speech }}</h2>
         <p class="m-2">{{ customer.description }}</p>
         <div class="flex-row flex">

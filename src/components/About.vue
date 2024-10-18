@@ -10,8 +10,8 @@ const chefs = [
 </script>
 
 <template>
-    <h2 class="text-center text-3xl uppercase font-bold  p-4">About Us</h2>
-    <div class="container max-w-4xl lg:space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 m-2">
+    <h2 class="text-center text-3xl uppercase font-bold  pt-10">About Us</h2>
+    <div class="container max-w-4xl pt-4 lg:space-x-10 mx-auto grid flex-row justify-center items-center md:grid-cols-2 m-2">
         <div class="flex-col flex m-3">
            <img src="/src/assets/img/Image.png" class="w-15 transition-transform duration-50 hover:scale-90 md:mx-auto" alt="">
         </div>
@@ -24,13 +24,13 @@ const chefs = [
     </div>
     
     <!--- Master Chef Section -->
-    <h2 class="text-center text-3xl  p-4">Our Master Chef</h2>
-    <div  class="flex-row grid lg:grid-cols-4 md:grid-cols-2 mx-auto">
-        <div v-for="chef in chefs" :key="chef.id" class="flex-col flex m-10 p-4 border shadow-lg rounded-lg hover:bg-orange-200 group relative">
+    <h2 class="text-center text-3xl  pt-4">Our Master Chef</h2>
+    <div  class="flex-row grid lg:grid-cols-4 md:grid-cols-2 mx-auto pt-4">
+        <div v-for="chef in chefs" :key="chef.id" class="flex-col flex m-10 p-4 border shadow-lg rounded-lg group relative">
             <img :src="chef.image" alt="" class="rounded-full w-15">
             <h4 class="my-2 font-bold text-lg text-center">{{ chef.name }}</h4>
             <p class="text-center">{{ chef.designation }}</p>
-            <div class="flex-row flex justify-center my-1">
+            <div class="flex-row flex justify-center my-1 py-3">
                 <div class="flex-col flex ">
                     <a href="" class="opacity-0 group-hover:opacity-100">
                         <div class="bg-orange-600 rounded-full p-3 mx-1 hover:bg-zinc-500">
