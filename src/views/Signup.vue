@@ -14,7 +14,7 @@
          .then((data) => {
              console.log("Succesfull registred!!")
              console.log(auth.currentUser)
-             router.push("/")
+             router.push("/views/login")
          }
         )
         .catch((error) => {

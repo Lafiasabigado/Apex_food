@@ -14,7 +14,7 @@
          .then((data) => {
              console.log("Succesfull signed in!!")
 
-            console.log(auth.currentUser)
+             console.log(auth.currentUser)
 
             router.push("/")
          }
