@@ -14,11 +14,12 @@
           
          .then((userCredential) => {
             const user = userCredential.user 
+            
             console.log("Succesfull registred!!", user)
 
             console.log(auth.currentUser)
 
-            router.push("/views/login")
+            router.push("/")
          }
         )
         .catch((error) => {
