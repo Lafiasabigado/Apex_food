@@ -11,10 +11,17 @@
         const auth = getAuth()
 
         createUserWithEmailAndPassword(auth, email.value, password.value)
-         .then((data) => {
-             console.log("Succesfull registred!!")
+          
+         .then((userCredential) => {
+
+             const user = userCredential.user 
+             console.log("Succesfull registred!!", user)
+
              console.log(auth.currentUser)
-             router.push("/views/login")
+
+             router.push("login")
+
+             window.location.href="/views/login"
          }
         )
         .catch((error) => {
