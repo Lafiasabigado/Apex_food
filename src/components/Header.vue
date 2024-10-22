@@ -24,7 +24,7 @@
 
 <template>
     <!-- Navbar -->
-    <nav class="bg-white hover:bg-orange-100 shadow-lg dark:bg-zinc-950 dark:text-zinc-100">
+    <nav class="bg-white shadow-lg dark:bg-zinc-950 dark:text-zinc-100">
       <div class="max-w-7xl mx-auto px-4">
           <div class="flex justify-between items-center py-4">
               <!-- Logo -->
@@ -33,7 +33,7 @@
               </div>
 
               <!-- Links for larger screens -->
-              <div class="hidden md:flex space-x-6 dark:bg-zinc-950 dark:text-zinc-100">
+              <div class="hidden md:flex space-x-6 dark:bg-zinc-950 dark:text-zinc-100 font-semibold">
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Home</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">About</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Menu</a>
