@@ -7,27 +7,23 @@
     const password = ref("")
     const router = useRouter();
 
-    const register = () => {
+    const register = async () => {
+    try {
         const auth = getAuth()
-
-        createUserWithEmailAndPassword(auth, email.value, password.value)
-          
-         .then((userCredential) => {
-            const user = userCredential.user 
-            
-            console.log("Succesfull registred!!", user)
-
-            console.log(auth.currentUser)
-
-            router.push("/")
-         }
-        )
-        .catch((error) => {
-            console.log(error.code)
-            alert(error.message)
-        })
-    };
-
+        const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value)
+        const user = userCredential.user
+        console.log("Successfully registered!", user)
+        
+        // Attendre que l'authentification soit terminée
+        await new Promise(resolve => setTimeout(resolve, 500))
+        
+        // Utiliser la navigation avec remplacement
+        await router.replace('/')
+    } catch (error) {
+        console.error("Erreur d'enregistrement:", error)
+        alert(error.message)
+    }
+}
     const signInwithGoogle = () => {
 
     };
