@@ -38,7 +38,7 @@
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">About</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Menu</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
-                  <router-link to="/views/login">
+                  <router-link to="/sign-in">
                     <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
                   </router-link>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
@@ -75,7 +75,7 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
             </li>
-            <router-link to="/views/login">
+            <router-link to="sign-in">
                 <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
             </router-link>   
           </ul>
