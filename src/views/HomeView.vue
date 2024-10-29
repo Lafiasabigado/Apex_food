@@ -4,10 +4,6 @@ import About from '../components/About.vue';
 import Header from '../components/Header.vue';
 import Footer from  '../components/Footer.vue';
 
-
-import { useDark,useToggle } from '@vueuse/core';
-
-
 </script>
 
 <template>
