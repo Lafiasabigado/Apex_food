@@ -4,6 +4,6 @@ import { SignIn } from 'vue-clerk'
 
 <template>
     <div class="justify-center items-center mt-20 flex">
-        <SignIn path="/sign-in" after-sign-in-url="/" sign-up-url="/sign-up"/>
+        <SignIn path="/sign-in" after-sign-in-url="/" sign-up-url="/sign-up" />
     </div>
 </template>
