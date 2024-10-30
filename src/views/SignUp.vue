@@ -6,7 +6,7 @@ import { SignUp } from 'vue-clerk'
   <div class="justify-center items-center mt-10 flex">
     <SignUp 
       path="/sign-up"
-      afterSignUpUrl="/" 
+      afterSignUpUrl="/sign-in" 
       signInUrl="/sign-in"
     />
   </div>
