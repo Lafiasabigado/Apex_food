@@ -38,9 +38,9 @@
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">About</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Menu</a>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
-                  <router-link to="/sign-in">
+                  <RouterLink to="/sign-in">
                     <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
-                  </router-link>
+                  </RouterLink>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500"></i> 
                   </a>
@@ -75,7 +75,7 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
             </li>
-            <router-link to="sign-in">
+            <router-link to="/sign-in">
                 <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
             </router-link>   
           </ul>
@@ -86,7 +86,7 @@
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="flex flex-col justify-center text-center items-center dark:text-zinc-950">
           <h2 class="text-4xl font-bold m-1">Best food for your taste</h2>
-          <p class="text-wrap ">Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
+          <p class="text-wrap font-medium">Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
           <div class="flex flex-row justify-between gap-2 ">
             <button class="bg-orange-400 hover:bg-orange-600 p-3 mx-3 my-2 border rounded-3xl text-white">Book A Table</button>
             <button class="bg-orange-400 hover:bg-orange-600 text-white p-3 mx-3 my-2 border rounded-3xl">Explore Menu</button>
@@ -100,5 +100,18 @@
 <style>
   html.dark {
     color-scheme: dark;
+  }
+  h2{
+    animation: myAnimation 1s linear forwards;
+  }
+  @keyframes myAnimation {
+    0%{
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
 </style>
