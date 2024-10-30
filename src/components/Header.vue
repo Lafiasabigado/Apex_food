@@ -1,6 +1,7 @@
 <script setup>
    import { ref, onMounted } from 'vue'
    import { useDark,useToggle } from '@vueuse/core';
+   import { RouterLink } from 'vue-router';
 
    
    const navContent = ref(null)
@@ -75,9 +76,9 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
             </li>
-            <router-link to="/sign-in">
+            <RouterLink to="/sign-in">
                 <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
-            </router-link>   
+            </RouterLink>   
           </ul>
         </div>
   </nav>
