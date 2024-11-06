@@ -2,6 +2,7 @@
    import { ref, onMounted } from 'vue'
    import { useDark,useToggle } from '@vueuse/core';
    import { RouterLink } from 'vue-router';
+   import SignIn from '../views/SignIn.vue';
 
    
    const navContent = ref(null)
@@ -47,21 +48,20 @@
                   <RouterLink>
                     <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
                   </RouterLink>
-                  <RouterLink to="/sign-in">
-                    <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
-                  </RouterLink>
+                  <SignIn></SignIn>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500"></i> 
                   </a>
               </div>
 
               <!-- Icon (Small screens) -->
-              <div class="md:hidden flex items-center justify-between space-x-8 py-4">
+              <div class="md:hidden flex items-center justify-between space-x-8 py-4 font-medium">
                   <button @click="toggleNav" id="nav-toggle" class="text-gray-600 focus:outline-none">
                       <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
                       </svg>
                   </button>
+                  <SignIn></SignIn>
                   <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
                      <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50"></i> 
                   </a>
@@ -90,9 +90,6 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
               </li>
-            <RouterLink to="/sign-in">
-                <a href="" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Log In</a>
-            </RouterLink>   
           </ul>
         </div>
   </nav>

@@ -1,13 +1,15 @@
 <script setup>
-import { SignIn } from 'vue-clerk'
+import { SignInButton, SignedIn, SignedOut, UserButton } from 'vue-clerk'
 </script>
 
 <template>
-  <div class="justify-center items-center mt-20 flex">
-    <SignIn 
-      path="/sign-in" 
-      afterSignInUrl="/" 
-      signUpUrl="/sign-up"
-    />
+  <div class="flex justify-center items-center">
+    <SignedIn>
+      <UserButton />
+    </SignedIn>
+    <SignedOut>
+      <SignInButton />
+    </SignedOut>
   </div>
 </template>
+
