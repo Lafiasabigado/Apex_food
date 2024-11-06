@@ -50,7 +50,7 @@
                   </RouterLink>
                   <SignIn></SignIn>
                   <a href="#" class="dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
-                    <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500"></i> 
+                    <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50 text-2xl"></i> 
                   </a>
               </div>
 
@@ -61,7 +61,9 @@
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
                       </svg>
                   </button>
-                  <SignIn></SignIn>
+                  <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
+                    <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-100 text-3xl"></i> 
+                  </a>
               </div>
           </div>
       </div>
@@ -87,10 +89,8 @@
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
               </li>
-              <li class="">
-                <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
-                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50"></i> 
-                </a>
+              <li class="p-9">
+                <SignIn></SignIn>
               </li>
           </ul>
         </div>
@@ -111,21 +111,3 @@
   </main>
 </template>
 
-<style>
-  html.dark {
-    color-scheme: dark;
-  }
-  h2{
-    animation: myAnimation 1s linear forwards;
-  }
-  @keyframes myAnimation {
-    0%{
-      transform: translateY(-10px);
-      opacity: 0;
-    }
-    100%{
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-</style>
