@@ -62,9 +62,6 @@
                       </svg>
                   </button>
                   <SignIn></SignIn>
-                  <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
-                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50"></i> 
-                  </a>
               </div>
           </div>
       </div>
@@ -89,6 +86,11 @@
               </RouterLink>
               <li class="py-2">
                 <a href="#" class="block  dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">Pages</a>
+              </li>
+              <li class="">
+                <a href="#" class="mx-6 dark:bg-zinc-950 dark:text-zinc-100 hover:text-orange-600 transition duration-300">
+                     <i id="mode" @click="toggleDarkMode()" class="fas fa-moon text-gray-500 w-50"></i> 
+                </a>
               </li>
           </ul>
         </div>
