@@ -60,8 +60,11 @@ const customers = [
     <h2 class="text-center text-3xl uppercase font-bold">Our Menu</h2>
     <p class="py-4">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
   </div>
-  <div class="flex-row lg:flex-row lg:max-w-4xl mx-auto md:grid-cols-6 sm:grid-cols-12 grid justify-center">
-    <div v-for="categorie in category" :key="categorie.id" class="flex-col justify-center mx-auto p-2 flex">
+  <div class="lg:max-w-4xl mx-auto sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 grid justify-center">
+    <div 
+      v-for="categorie in category" 
+      :key="categorie.id" 
+      class="flex-col justify-center mx-auto p-2 flex">
       <button @click="selectedCategory(categorie.name)" class="font-bold uppercase bg-orange-200 hover:bg-orange-400 dark:bg-orange-400 dark:hover:bg-orange-600 rounded-3xl p-3">{{ categorie.name }}</button>
     </div>
   </div>

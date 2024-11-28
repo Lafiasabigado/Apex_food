@@ -8,7 +8,7 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from 'vue-clerk'
       <UserButton />
     </SignedIn>
     <SignedOut>
-      <SignInButton />
+      <SignInButton mode="modal"/>
     </SignedOut>
   </div>
 </template>
